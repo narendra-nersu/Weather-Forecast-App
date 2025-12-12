@@ -1,0 +1,230 @@
+/* -----------------------------------------------------------
+   GLOBAL STYLING
+----------------------------------------------------------- */
+body {
+  background: url('/images/2148933766.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", sans-serif;
+  color: white;
+}
+
+/* -----------------------------------------------------------
+   SEARCH BAR
+----------------------------------------------------------- */
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.searchBarParentDiv {
+  width: 60%;
+  position: relative;
+}
+
+.inputfield {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 28px;
+  border: none;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 18px;
+  color: #222;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 18px;
+  top: 10px;
+  cursor: pointer;
+  width: 30px; /* perfect size */
+}
+
+/* -----------------------------------------------------------
+   CURRENT WEATHER CARD
+----------------------------------------------------------- */
+.weather-card {
+  width: 85%;
+  margin: 30px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.city-name {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.temperature {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+.temp-section img {
+  width: 60px; /* fixed main weather icon size */
+}
+
+.datetime {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+/* -----------------------------------------------------------
+   METRIC CARDS (Humidity, Pressure, Feels Like, Visibility)
+----------------------------------------------------------- */
+.metric-row {
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.metric-card {
+  flex: 1;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.metric-card img {
+  width: 35px; /* perfect small icon */
+}
+
+.metric-card h6 {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* -----------------------------------------------------------
+   AQI + SUNRISE / SUNSET CARDS
+----------------------------------------------------------- */
+.cards-row {
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-box {
+  flex: 1;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+}
+
+.card-box img {
+  width: 50px;
+}
+
+/* -----------------------------------------------------------
+   5-DAY FORECAST  (Corrected! No grid mess)
+----------------------------------------------------------- */
+.forecast-container {
+  width: 85%;
+  margin: 25px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.forecast-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 14px;
+}
+
+.forecast-icon img {
+  width: 40px;   /* perfect icon size */
+}
+
+.forecast-temp {
+  font-size: 18px;
+  width: 80px;
+  text-align: center;
+}
+
+.forecast-day {
+  font-size: 18px;
+  width: 120px;
+}
+
+.forecast-date {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* -----------------------------------------------------------
+   TODAY HOURLY TEMPERATURE BAR (Corrected)
+----------------------------------------------------------- */
+.today-temps-container {
+  width: 85%;
+  margin: 30px auto;
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+}
+
+.today-temp-card {
+  min-width: 120px;
+  padding: 15px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.17);
+  border-radius: 14px;
+}
+
+.today-icon {
+  width: 50px;
+}
+
+.hour-time {
+  opacity: 0.9;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.hour-temp {
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+/* -----------------------------------------------------------
+   SMALL REUSABLE ICON CLASSES
+----------------------------------------------------------- */
+.icon-small {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.icon-medium {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.weather-main-icon {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
